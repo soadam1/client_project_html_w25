@@ -1,0 +1,168 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.skip a {
+    position: absolute;
+    top: -60px;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: bold;
+    border: 2px solid black;
+    background-color: #ddd;
+    text-align: center;
+}
+
+.skip a:focus {
+    top: 20px;
+}
+
+body {
+    font-size: 18px;
+}
+
+nav {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+    background-color: #ddd;
+    align-items: center;
+    justify-items: center;
+}
+
+img.logo {
+    display: inline-block;  
+    grid-column: 1/2;
+    grid-row: 1/5;
+    width: 100%;
+    
+}
+
+nav a{
+    font-weight: bold;
+    text-decoration: none;
+    background-color: none;
+    padding: 0px 0px 0px 0px;
+    border: none;
+}
+
+nav a[aria-current="page"] {
+    border: 2px solid red;
+    padding: 5px; 
+    background-color: white;
+}
+
+a:focus {
+    padding: 5px;
+    border: 3px solid black;
+    text-decoration: underline;
+}
+
+nav ul{
+    width: 75vw;
+    display: contents;
+}
+
+nav ul li {
+    grid-column: 2/5;
+    text-align: center;
+    width: 75vw;
+}
+
+h1 {
+    background-color: #bbbbbb;
+    padding: 10px;
+    font-size: 50px;
+    text-align: center;
+    line-height: 1;
+}
+
+h2 {
+    background-color: #bbbbbb;
+    padding: 10px;
+    font-size: 32px;
+    text-align: center;
+    line-height: 1;
+}
+
+h3 {
+    background-color: #ddd;
+    text-align: center;
+    padding: 10px 10px 0px 10px;    
+}
+
+head {
+    font-family: Arial;
+}
+
+body {
+    font-family: Arial;
+}
+
+p {
+    padding: 10px;
+    background-color: #ddd;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+ol {
+    background-color: #ddd;
+    padding: 10px 10px 10px 30px;
+    line-height: 1.5;
+}
+
+ul {
+    background-color: #ddd;
+    padding: 10px 10px 10px 30px;
+    line-height: 1.5;     
+}
+
+figcaption {
+    background-color: #ddd;
+    padding: 10px 10px;
+}
+
+.img-UHS, .img-backpack, .img-sticky, .img-desk, .img-spring, .img-walk {
+    background-color: #ddd;
+    width: 100%;
+}
+
+footer p{
+    background-color: #bbbbbb;    
+}
+
+a.body-link {
+    display: block;
+    padding: 10px 10px 10px 10px;
+    background-color: #ddd;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100vw;
+    background-color: navy;
+}
+
+section:nth-child(even) {
+    grid-column: 2/11;
+}
+
+section:nth-child(odd) {
+    grid-column: 1/10;
+}
+
+figure {
+    background-color: #ddd;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    main.main section {
+        grid-column: 1/11;
+    }
+
+}
