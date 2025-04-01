@@ -19,11 +19,11 @@
                 <li><a href = "physical_health_support.html" aria-current="page">Physical Health Support</a></li>
             </ul>
         </nav>
-        <h1>Physical Health Support at UMSI</h1>
 
     </header>
     <main id = "main" class="main">
         <section>
+            <h1>Physical Health Support at UMSI</h1>
             <h2>The Importance of Physical Health in Graduate School</h2>
             <p>Balancing coursework, research, and other responsibilities can be demanding. Good physical health not only supports your body but also enhances your mental clarity and emotional resilience, enabling you to perform at your best both academically and personally.</p>
         </section>
@@ -48,9 +48,11 @@
         UMGPT. (2025). UMGPT (January 26th version) [Large language model]. -->
     </main>
     <footer>
-        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a> | <span id="year"></span></p>
     </footer>
-    
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
